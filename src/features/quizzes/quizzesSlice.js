@@ -7,10 +7,7 @@ const quizzesSlice = createSlice({
   },
   reducers: {
     addQuiz: (state, action) => {
-      state.quizzes[action.payload.id] = {
-        ...action.payload,
-        cardIds: []
-      };
+      state.quizzes[action.payload.id] = action.payload;
     }
   }
 });
