@@ -12,6 +12,18 @@ const quizzesSlice = createSlice({
   }
 });
 
+export const addQuizForTopicId = (payload) => {
+  return (dispatch) => {
+    dispatch(addQuiz(payload));
+    dispatch(
+      addQuiz({
+        topicId: payload.topicId,
+        quizId: payload.id
+      })
+    );
+  };
+};
+
 export const selectQuizzes = (state) => state.quizzes.quizzes;
 
 export const { addQuiz } = quizzesSlice.actions;
