@@ -18,10 +18,6 @@ const topicsSlice = createSlice({
         state.topics[topicId].quizIds.push(quizId);
       }
     }
-
-    // addQuizId: (state, action) => {
-    //   state.topics[action.payload.topicId].quizIds.push(action.payload.quizId);
-    // }
   }
 });
 
