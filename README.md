@@ -23,4 +23,4 @@ The app's state is totally normalized, with slices for topics, quizzes, and card
 
 # Questions
 
-Is this appropriately scoped? Does it have too many features? Too few?
+I would like to know from experienced Redux devs if this is a good solution? If there are better practices to be used here I would like to learn. Redux has been very challenging for me to grasp so any insight from folks with experience is greatly appreciated!
