@@ -26,10 +26,10 @@ export default function NewQuizForm() {
     // create the new quiz here
     dispatch(
       addQuizForTopicId({
-        id: uuidv4(),
         name,
         topicId,
         cardIds,
+        id: uuidv4(),
       })
     );
 
