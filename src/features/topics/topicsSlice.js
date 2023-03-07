@@ -13,8 +13,15 @@ const topicsSlice = createSlice({
       };
     },
     addQuizId: (state, action) => {
-      state.topics[action.payload.topicId].quizIds.push(action.payload.quizId);
+      const { topicId, quizId } = action.payload;
+      if (state.topics[topicId]) {
+        state.topics[topicId].quizIds.push(quizId);
+      }
     }
+
+    // addQuizId: (state, action) => {
+    //   state.topics[action.payload.topicId].quizIds.push(action.payload.quizId);
+    // }
   }
 });
 
