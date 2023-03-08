@@ -27,4 +27,4 @@ I would like to know from experienced Redux devs if this is a good solution? If 
 
 # Live Site
 
-[Flashcards Live Site](www.tomofromearth-flashcards.surge.sh)
+[Flashcards Live Site](http://tomofromearth-flashcards.surge.sh/)
